@@ -1,0 +1,148 @@
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #003785;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+  
+.sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+  
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+header span{
+    position: fixed;
+    top: 15px;
+    left: 20px;
+    font-size:50px;
+    cursor:pointer;
+  
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+h1 a{
+    color: white;
+}
+
+header{
+    text-align: center;
+    background-color: #003785;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+    color: white;
+    z-index: 2;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(24rem,1fr));
+}
+
+.contenedor{
+    margin: 0px 1vh;
+}
+
+.marco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    height: 20vh;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+.marco-texto{
+    background-color: grey;
+}
+
+.price {
+    color: grey;
+    font-size: 2vh;
+  }
+
+.card{
+    z-index: 1;
+    margin-bottom: 2vh;
+}
+
+.btn-primary{
+    background-color: #003785;
+    border-color: #003785;
+}
+
+img{
+    height: 30vh;
+}
+
+#cart-button {
+    position: fixed;
+    top: 3vh;
+    right: 3vh; 
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#cart-dropdown {
+    display: none;
+    position: fixed;
+    top: 7vh;
+    right: 6vh;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 1000;
+    max-height: 300px;
+    overflow-y: auto;
+    width: 200px;
+}
+
+#cart-dropdown ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#cart-dropdown ul li {
+    margin-bottom: 5px;
+}
+
